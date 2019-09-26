@@ -1,6 +1,6 @@
 package sample.models;
 
-import org.json.simple.JSONObject;
+import org.json.JSONObject;
 
 public class Photo {
     String id;

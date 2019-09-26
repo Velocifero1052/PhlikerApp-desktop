@@ -1,8 +1,8 @@
 package sample.models;
 
 import java.util.ArrayList;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONArray;
 
 public class Photos {
     Integer page;

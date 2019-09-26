@@ -1,7 +1,5 @@
 package sample.models;
-
-
-import org.json.simple.JSONObject;
+import org.json.JSONObject;
 
 public class Resp {
     String status;
@@ -9,7 +7,7 @@ public class Resp {
 
     public Resp(JSONObject jsonObject){
         status = (String)jsonObject.get("stat");
-        photos = new Photos((JSONObject) jsonObject.get("photos"));
+        photos = new Photos((JSONObject)jsonObject.get("photos"));
     }
 
 
