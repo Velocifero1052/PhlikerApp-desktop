@@ -3,15 +3,15 @@ package sample.models;
 import org.json.JSONObject;
 
 public class Photo {
-    String id;
-    String owner;
-    String secret;
-    String server;
-    Integer farm;
-    String title;
-    Integer isPublic;
-    Integer isFriend;
-    Integer isFamily;
+    private String id;
+    private String owner;
+    private String secret;
+    private String server;
+    private Integer farm;
+    private String title;
+    private Integer isPublic;
+    private Integer isFriend;
+    private Integer isFamily;
 
     Photo(JSONObject jsonObject){
         id = (String)jsonObject.get("id");

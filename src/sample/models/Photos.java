@@ -5,11 +5,11 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 
 public class Photos {
-    Integer page;
-    Integer pages;
-    Integer perPage;
-    String total;
-    ArrayList<Photo> data = new ArrayList<Photo>();
+    private Integer page;
+    private Integer pages;
+    private Integer perPage;
+    private String total;
+    private ArrayList<Photo> data = new ArrayList<Photo>();
 
     Photos(JSONObject jsonObject){
         page = (Integer)jsonObject.get("page");
