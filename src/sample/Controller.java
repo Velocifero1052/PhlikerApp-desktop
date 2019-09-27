@@ -53,13 +53,14 @@ public class Controller {
     private void search(ActionEvent event) throws Exception{
 
         String text = searchField.getText();
-        searching = new String(text);
+        searching = text.replace(' ', '+');
+
 
         System.out.println(text);
         currentImage = 0;
         currentPage = 1;
 
-        String searchUrl = searchUrlTemplate.replace("{TEXT}", text)
+        String searchUrl = searchUrlTemplate.replace("{TEXT}", searching)
                 .replace("{PAGE}", currentPage.toString());
         System.out.println(searchUrl);
         String res = obtainData(searchUrl);
@@ -155,6 +156,5 @@ public class Controller {
         Resp response = new Resp(jsonObject);
         photo.addAll(response.getPhotos().getData());
     }
-
 
 }
